@@ -1,10 +1,13 @@
 import React from 'react'
-import Sidebar from './sidebar'
+import Search from './search';
 
-const Layout = () => {
+const Layout = (props: any) => {
   return (
-    <Sidebar/>
+    <>
+        <Search/>
+        {props.children}
+    </>
   )
 }
 
-export default Layout
+export default Layout;
