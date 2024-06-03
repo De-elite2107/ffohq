@@ -7,13 +7,14 @@ import IconGift from '@/svgs/gift-icon'
 import IconHeart from '@/svgs/heart-icon'
 import IconInvoice from '@/svgs/invoice-icon'
 import IconMessages from '@/svgs/message-icon'
-import IconPeople from '@/svgs/people-icon'
+import IconPeople, { IconPeopleFill } from '@/svgs/people-icon'
 import IconSoftware_layout_4boxes from '@/svgs/prod-icon'
 import IconStock from '@/svgs/stock-icon'
 import IconBasic_todo from '@/svgs/todo-icon'
 import { Box, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import Dashboard from "@/component/dashboard";
+import IconBuilding from "@/svgs/building-icon";
 
 const sen = Sen({ subsets: ["latin"] });
 
@@ -51,8 +52,8 @@ export default function Home() {
             borderRadius="5px"
             justifyContent="left"
             >
-              <IconSoftware_layout_4boxes width="20px" height="20px"/>&emsp;
-              <Text>Products</Text>
+              <IconBuilding width="20px" height="20px"/>&emsp;
+              <Text>Restaurants</Text>
             </Tab>
             <Tab
             ml="30px"
@@ -61,28 +62,8 @@ export default function Home() {
             borderRadius="5px"
             justifyContent="left"
             >
-              <IconHeart width="20px" height="20px"/>&emsp;
-              <Text>Favorites</Text>
-            </Tab>
-            <Tab
-            ml="30px"
-            _selected={{bg: "#4880FF", color : "white"}}
-            p="0.5rem 1rem 0.5rem 1rem"
-            borderRadius="5px"
-            justifyContent="left"
-            >
-              <IconMessages width="20px" height="20px"/>&emsp;
-              <Text>Inbox</Text>
-            </Tab>
-            <Tab
-            ml="30px"
-            _selected={{bg: "#4880FF", color : "white"}}
-            p="0.5rem 1rem 0.5rem 1rem"
-            borderRadius="5px"
-            justifyContent="left"
-            >
-              <IconCardChecklist width="20px" height="20px"/>&emsp;
-              <Text>Order Lists</Text>
+              <IconPeopleFill width="20px" height="20px"/>&emsp;
+              <Text>Users</Text>
             </Tab>
             <Tab
             ml="30px"
@@ -92,8 +73,8 @@ export default function Home() {
             justifyContent="left"
             mb="2rem"
             >
-              <IconStock width="20px" height="20px"/>&emsp;
-              <Text>Product Stock</Text>
+              <IconMessages width="20px" height="20px"/>&emsp;
+              <Text>Reviews</Text>
             </Tab>
             <Box
             p="1rem 1rem 2rem 1rem"

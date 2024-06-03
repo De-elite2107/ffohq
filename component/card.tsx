@@ -1,3 +1,4 @@
+import IconBuilding from '@/svgs/building-icon';
 import CounterClockwiseClock from '@/svgs/counterclock-icon';
 import IconCube from '@/svgs/cube-icon';
 import DownChartLine from '@/svgs/downchartline';
@@ -23,7 +24,7 @@ const Card = (props: ICard) => {
                 <Text fontSize="24px" fontWeight={600}>{props.figure}</Text>
             </Box>
             <Box>
-                {props.head === "User" ? <IconPeopleFill color='purple' width="50px" height="50px"/> : props.head === "Order" ? <IconCube color='orange' width="50px" height="50px"/> : props.head === "Sales" ? <IconUpChart color='lightgreen' width="50px" height="50px"/> : props.head === "Pending" ? <CounterClockwiseClock color='coral' width="50px" height="50px"/> : null}
+                {props.head === "User" ? <IconPeopleFill color='purple' width="50px" height="50px"/> : props.head === "Order" ? <IconCube color='orange' width="50px" height="50px"/> : props.head === "Sales" ? <IconUpChart color='lightgreen' width="50px" height="50px"/> : props.head === "Pending" ? <IconBuilding color='coral' width="50px" height="50px"/> : null}
             </Box>
         </Flex>
         <Flex gap={2}>
