@@ -19,7 +19,7 @@ const Card = (props: ICard) => {
     <Box w="15rem" fontSize="small" bg="white" p="1rem" borderRadius="10px">
         <Flex justifyContent="space-between" mb="2rem" alignItems="center">
             <Box lineHeight={8}>
-                <Text color="grey">Total {props.head}</Text>
+                {props.head !== "Pending" ? (<Text color="grey">Total {props.head}</Text>) : <Text color="grey">Number of Restaurants</Text>}
                 <Text fontSize="24px" fontWeight={600}>{props.figure}</Text>
             </Box>
             <Box>
